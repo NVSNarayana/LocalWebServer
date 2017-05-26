@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           $.ajax({
+            url:"json/data.json",
+            type:"GET",
+            dataType:"json",
+            success:function(r){
+                console.log(r);
+            },
+            error:function(err){
+                console.log(err);
+            }
+           });
+        });
+    </script>
+</head>
+
+<body>
+    <h1> this is Index Page </h1>
+</body>
+
+</html>
